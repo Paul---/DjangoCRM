@@ -7,7 +7,7 @@ def HomePage(req):
   return render(req, 'accounts/dashboard.html')
   
 def ProductsPage(req):
-  return HttpResponse("This is the Products Page. Welcome!")
+  return render(req, 'accounts/products.html')
 
 def CustomerPage(req):
-  return HttpResponse('This is the customer page.')
+  return render(req,'accounts/customer.html')
